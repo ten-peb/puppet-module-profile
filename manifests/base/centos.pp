@@ -3,7 +3,6 @@
 # A description of what this class does
 #
 # @example
-#   include profile::base::common
-class profile::base::common {
-  include ntp
+#   include profile::base::centos
+class profile::base::centos {
 }

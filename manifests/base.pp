@@ -5,4 +5,8 @@
 # @example
 #   include profile::base
 class profile::base {
+  case $::osfamily : {
+    'Debian' : {
+    }
+  }
 }
