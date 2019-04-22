@@ -8,7 +8,7 @@ class profile::base {
   case $::osfamily  {
     'Debian' : {
       include profile::base::deb
-    },
+    }
     default : {
       notify {"tell that lazy Puppet guy to support your OS (${{::osfamily})}":}
     }
