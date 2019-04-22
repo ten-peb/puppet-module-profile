@@ -5,8 +5,12 @@
 # @example
 #   include profile::base
 class profile::base {
-  case $::osfamily : {
+  case $::osfamily  {
     'Debian' : {
+      include profile::base::deb
+    },
+    default : {
+      notify {"tell that lazy Puppet guy to support your OS (${{::osfamily})}":}
     }
   }
 }
