@@ -10,7 +10,9 @@ class profile::base {
       include profile::base::deb
     }
     default : {
-      notify {"tell that lazy Puppet guy to support your OS (${{::osfamily})}":}
+      notify {
+        "tell that lazy Puppet guy to support your OS (${{::osfamily})}":
+      }
     }
-  }
+
 }
