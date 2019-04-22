@@ -14,5 +14,5 @@ class profile::base {
         message => "tell that lazy Puppet guy to support your OS (${::osfamily}})"
       }
     }
-
+  }
 }
