@@ -22,5 +22,8 @@ class profile::jenkins::master {
   class{'docker::machine':
     require=> Package['jenkins']
   }
-  
+
+  class{'docker::compose':
+    require => Package['jenkins']
+  }
 }
