@@ -9,7 +9,7 @@ class profile::jenkins::master {
   include tenna::users::jenkins
 
   class{'java':
-    distribution=>'jdk8'
+    package=>'openjdk-8-jdk'
   }
   
   class{'jenkins':
