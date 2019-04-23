@@ -9,5 +9,9 @@ class profile::jenkins::master {
   include tenna::users::jenkins
 
   include jenkins
+
+  class{'docker':
+    require => Package['jenkins']
+  }
   
 }
