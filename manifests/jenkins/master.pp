@@ -8,7 +8,13 @@ class profile::jenkins::master {
   include tenna::users::peter
   include tenna::users::jenkins
 
-  include jenkins
+  class{'java':
+    distribution=>'jdk8'
+  }
+  
+  class{'jenkins':
+    require => Class['java']
+  }
 
   class{'docker':
     require => Package['jenkins']
