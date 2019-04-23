@@ -6,4 +6,5 @@
 #   include profile::docker::host
 class profile::docker::host {
   include docker
+  include docker::machine 
 }
