@@ -9,6 +9,6 @@ class profile::base::common {
 
   service {'puppet':
     ensure => running,
-    enabe  => true
+    enable  => true
   }
 }
