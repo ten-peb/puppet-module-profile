@@ -11,4 +11,7 @@ class profile::base::common {
     ensure => running,
     enable  => true
   }
+  class {'timezone':
+    timezone => 'EST5EDT'
+  }
 }
