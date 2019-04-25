@@ -14,7 +14,7 @@ class profile::qa::testbed {
   }
 
   include tenna::deps::nodejs
-  include tenna::deps::npn
+  include tenna::deps::npm
     
   
 }
