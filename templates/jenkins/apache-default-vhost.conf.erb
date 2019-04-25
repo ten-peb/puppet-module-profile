@@ -1,0 +1,11 @@
+<Virtualhost *:80>
+    ServerName        <%= @server_name %>
+
+    ProxyPreserveHost On
+    AllowEncodedSlashes NoDecode
+ 
+ 
+    ProxyPass         /  http://localhost:8080/ nocanon
+    ProxyPassReverse  /  http://localhost:8080/
+    ProxyPassReverse  /  http://<%= @server_name %>/
+</Virtualhost>
