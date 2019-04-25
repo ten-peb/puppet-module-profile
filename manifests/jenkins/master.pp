@@ -6,7 +6,7 @@
 #   include profile::jenkins::master
 class profile::jenkins::master {
   include tenna::users::peter
-  include tenna::users::jenkins
+
 
   class{'java':
     package=>'openjdk-8-jdk'
