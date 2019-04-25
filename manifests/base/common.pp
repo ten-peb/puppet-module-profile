@@ -6,4 +6,9 @@
 #   include profile::base::common
 class profile::base::common {
   include ntp
+
+  service {'puppet':
+    ensure => running,
+    enabe  => true
+  }
 }
