@@ -9,12 +9,14 @@ class profile::qa::testbed {
   include docker
   include docker::machine
   include docker::compose
+  include selenium
 
   class {'apache':
   }
 
   include tenna::deps::nodejs
   include tenna::deps::npm
+  include tenna::deps::ruby
   include tenna::users::kellyh
   include tenna::users::adityas
   
