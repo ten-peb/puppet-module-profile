@@ -19,6 +19,7 @@ class profile::qa::testbed {
   include tenna::deps::ruby
   include tenna::users::kellyh
   include tenna::users::adityas
+  include tenna::users::nehaprabhu
   
   
 }
