@@ -5,7 +5,6 @@
 # @example
 #   include profile::jenkins::master
 class profile::jenkins::master {
-  include tenna::users::peter
 
 
   class{'java':
