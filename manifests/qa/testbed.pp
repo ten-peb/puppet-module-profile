@@ -17,9 +17,6 @@ class profile::qa::testbed {
   include tenna::deps::nodejs
   include tenna::deps::npm
   include tenna::deps::ruby
-  include tenna::users::kellyh
-  include tenna::users::adityas
-  include tenna::users::nehaprabhu
-  
+  include tenna::addusers
   
 }
