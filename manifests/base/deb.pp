@@ -8,7 +8,7 @@ class profile::base::deb {
   class{'apt':
     update => {
       frequency => 'daily',
-      loglevel => 'debug'
+      loglevel  => 'debug'
     }
   }
 }

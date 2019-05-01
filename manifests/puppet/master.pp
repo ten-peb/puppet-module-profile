@@ -6,5 +6,5 @@
 #   include profile::puppet::master
 class profile::puppet::master {
   include tenna::users::peter
-  
+
 }

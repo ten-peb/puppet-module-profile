@@ -9,7 +9,7 @@ class profile::base::common {
 
   service {'puppet':
     ensure => running,
-    enable  => true
+    enable => true
   }
   class {'timezone':
     timezone => 'EST5EDT'

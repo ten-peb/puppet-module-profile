@@ -18,5 +18,5 @@ class profile::qa::testbed {
   include tenna::deps::npm
   include tenna::deps::ruby
   include tenna::addusers
-  
+
 }

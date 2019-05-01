@@ -10,7 +10,7 @@ class profile::jenkins::master {
   class{'java':
     package=>'openjdk-8-jdk'
   }
-  
+
   class{'jenkins':
     require => Class['java']
   }

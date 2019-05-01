@@ -7,7 +7,7 @@
 class profile::base {
   case $::osfamily  {
     'Debian' : {
-      include profile::base::common 
+      include profile::base::common
       include profile::base::deb
     }
     default : {
