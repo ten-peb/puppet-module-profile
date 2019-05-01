@@ -25,4 +25,18 @@ class profile::jenkins::master {
   class{'docker::compose':
     require => Package['jenkins']
   }
+  file{'/usr/local/bin/install_plugin.sh':
+    ensure  => present,
+    content => template('tenna/jenkins/install_plugins.sh.erb'),
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755'
+  }
+  file{'/usr/local/bin/jenkins-support':
+    ensure  => present,
+    content => template('tenna/jenkins/jenkins-support.erb'),
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755'
+  }
 }
