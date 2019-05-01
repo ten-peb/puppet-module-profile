@@ -27,7 +27,7 @@ class profile::jenkins::master {
   }
   file{'/usr/local/bin/install_plugin.sh':
     ensure  => present,
-    content => template('tenna/jenkins/install_plugins.sh.erb'),
+    content => template('tenna/jenkins/install_plugin.sh.erb'),
     owner   => 'root',
     group   => 'root',
     mode    => '0755'
