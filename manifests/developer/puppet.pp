@@ -15,11 +15,11 @@ class profile::developer::puppet inherits profile::developer {
     ensure => latest
   }
   package{'bundler':
-    ensure => latest,
+    ensure   => latest,
     provider => 'gem'
   }
   package{'ruby-bundler':
     ensure => latest
   }
-  
+
 }

@@ -10,5 +10,5 @@ class profile::puppet::master {
   }
 
   class { 'puppetdb': }
-  
+
 }
