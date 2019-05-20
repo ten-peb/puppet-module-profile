@@ -3,12 +3,10 @@
 # A description of what this class does
 #
 # @example
-#   include profile::puppet::master
-class profile::puppet::master {
-  package{'puppetserver':
+#   include profile::developer
+class profile::developer {
+  # TODO: move this off to its own module
+  package{'build-essentials':
     ensure => latest
   }
-
-  class { 'puppetdb': }
-  
 }
