@@ -6,4 +6,7 @@
 #   include profile::base::deb
 class profile::base::deb {
   include apt
+  package{'awscli':
+    ensure => present
+  }
 }
