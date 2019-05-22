@@ -9,6 +9,10 @@ class profile::puppet::master {
     ensure => latest
   }
 
-  class { 'puppetdb': }
+  include puppetdb
+  service{'puppetserver':
+    ensure => running,
+    enable => true
+  }
 
 }

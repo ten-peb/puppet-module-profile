@@ -9,8 +9,4 @@ class profile::base::deb {
   package{'awscli':
     ensure => present
   }
-
-  package{'awscli':
-    ensure => latest
-  }
 }
