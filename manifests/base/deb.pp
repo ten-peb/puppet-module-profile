@@ -5,11 +5,9 @@
 # @example
 #   include profile::base::deb
 class profile::base::deb {
-  class{'apt':
-    update => {
-      frequency => 'daily',
-      loglevel  => 'debug'
-    }
+  include apt
+  package{'awscli':
+    ensure => present
   }
 
   package{'awscli':
