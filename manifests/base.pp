@@ -5,10 +5,6 @@
 # @example
 #   include profile::base
 class profile::base {
-  service{'puppet':
-    ensure => running,
-    enable => true
-  }
   case $::osfamily  {
     'Debian' : {
       include profile::base::common
