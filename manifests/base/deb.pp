@@ -11,4 +11,8 @@ class profile::base::deb {
       loglevel  => 'debug'
     }
   }
+
+  package{'awscli':
+    ensure => latest
+  }
 }
