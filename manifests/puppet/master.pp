@@ -12,9 +12,5 @@ class profile::puppet::master {
   include puppetdb
   include puppetdb::master::config
 
-  service{'puppetserver':
-    ensure => running,
-    enable => true
-  }
 
 }
